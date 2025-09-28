@@ -27,7 +27,7 @@ h2 {
 .hero-section {
     position: relative;
     height: 100vh; 
-    background-image: url('/BaiThucHanh_02/images/head-background.jpg'); 
+    background-image: url('../BaiThucHanh_02/images/head-background.jpg'); 
     background-size: cover;
     background-position: center;
     color: white;
@@ -265,4 +265,66 @@ h2 {
     border: none;
     grid-column: 1 / -1;
 
+}
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 600px) {
+    .container {
+        padding: 0 8px;
+        max-width: 100%;
+    }
+    .hero-section {
+        height: auto;
+        min-height: 400px;
+        background-position: center;
+    }
+    .top-bar .logo img {
+        height: 80px;
+    }
+    .hotline {
+        padding: 10px 20px;
+        font-size: 1.1rem;
+    }
+    .hero-content {
+        flex-direction: column;
+        padding-top: 40px;
+        align-items: flex-start;
+    }
+    .form-container {
+        max-width: 100%;
+        padding: 20px;
+        border-width: 4px;
+    }
+    .form-container h1 {
+        font-size: 1.5rem;
+    }
+    .form-container ul {
+        font-size: 1rem;
+    }
+    .info-section, .ket-noi-section {
+        padding: 20px 0;
+    }
+    .ket-noi-section .container,
+    .content-grid,
+    .cta-grid,
+    .bottom-form {
+        grid-template-columns: 1fr !important;
+        gap: 16px;
+    }
+    .info-image img,
+    .ket-noi-section .info-image img,
+    .ket-noi-section .image-grid {
+        width: 100%;
+        border-radius: 8px;
+    }
+    .info-text p {
+        font-size: 1rem;
+    }
+    .cta-section h2 {
+        font-size: 1.2rem;
+    }
+    .bottom-form input,
+    .bottom-form button {
+        font-size: 1rem;
+        padding: 10px;
+    }
 }
