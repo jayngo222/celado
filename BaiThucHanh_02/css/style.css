@@ -1,0 +1,268 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #5d973a;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+/* --- HERO SECTION & BACKGROUND --- */
+.hero-section {
+    position: relative;
+    height: 100vh; 
+    background-image: url('/BaiThucHanh_02/images/head-background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* --- KHUNG HEADER --- */
+.top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 20px 0;
+}
+
+/* LOGO VÀ HOTLINE */
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+    padding-bottom: 20px;
+}
+.top-bar .container::after {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(255, 255, 255); 
+}
+
+.top-bar .logo img {
+    height: 300px;
+}
+
+/* NÚT HOTLINE */
+.hotline {
+    background-color: #5d973a;
+    color: white;
+    padding: 30px 70px;
+    font-weight: bold;
+    font-size: 50px;}
+
+/* --- FORM ĐĂNG KÝ --- */
+.hero-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-top: 150px; 
+}
+
+.form-container {
+    background-color: #5d973a;
+    max-width: 550px; 
+    padding: 40px;
+    border: 10px solid #e3dca6; 
+    border-radius: 5px; 
+}
+
+
+.form-container h1 {
+    font-size: 2.8rem; 
+    line-height: 1.2;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.form-container ul {
+    list-style: none;
+    margin-bottom: 35px;
+    text-align: center; 
+    font-size: 1.2rem;  
+    font-weight: bold;
+    font-style: italic;
+}
+
+.form-container ul li {
+    margin-bottom: 12px; 
+    font-size: 1.1rem;
+    position: relative;
+}
+
+
+.form-container input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #e3dca6;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1rem;
+}
+
+.form-container input::placeholder {
+    color: #f0f0f0;
+}
+
+.form-container button {
+    padding: 18px;
+    max-width: 250px;
+    display: block; 
+    margin: 10px auto 0 auto;
+    background-color: #c4d137;
+    border: none;
+    border-radius: 5px; 
+    color: #fff;
+    font-size: 1.3rem; 
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px; 
+}
+
+
+
+.info-section {
+    padding: 60px 0;
+}
+.ket-noi-section {
+    background-color: #5d973a;
+    padding: 80px 0;
+}
+
+
+.ket-noi-section .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+    align-items: center;
+}
+
+
+.ket-noi-section h2 {
+    color: #ffffff;
+    text-align: center;
+    border-bottom: 3px double #ffffff;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.ket-noi-section p {
+    color: #f0f0f0;
+    text-align: justify;
+}
+
+
+.ket-noi-section .info-image {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}
+
+.ket-noi-section .info-image img, 
+.ket-noi-section .image-grid {
+    width: 80%; 
+    height: auto;
+    border: none;
+    border-radius: 0;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.info-section.reverse .info-image {
+    order: 2;
+}
+
+.info-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 2px dashed #5d973a;
+    border-radius: 15px;
+
+}
+
+
+.info-text p {
+    font-size: 25px; 
+    text-align: justify;
+    vertical-align: top !important;
+}
+
+/* --- PHẦN ĐĂNG KÝ CUỐI TRANG --- */
+.cta-section {
+    background-color: rgb(235, 233, 119);
+    padding: 30px 0 40px 0;
+}
+
+.cta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr; 
+    gap: 40px; 
+    align-items: center;
+}
+
+.cta-section h2 {
+    color: #5d973a;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.bottom-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+}
+
+.bottom-form input,
+.bottom-form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.bottom-form input[type="email"] {
+    grid-column: 1 / -1;
+}
+
+.bottom-form button {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    grid-column: 1 / -1;
+
+}
