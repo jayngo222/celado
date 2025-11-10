@@ -27,7 +27,7 @@ h2 {
 .hero-section {
     position: relative;
     height: 100vh; 
-    background-image: url('../BaiThucHanh_02/images/head-background.jpg'); 
+    background-image: url('../images/head-background.jpg'); 
     background-size: cover;
     background-position: center;
     color: white;
